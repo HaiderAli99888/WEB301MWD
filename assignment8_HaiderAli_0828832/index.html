@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .responsive-bg {
+            background-color: var(--bs-primary);
+        }
+
+        @media (min-width: 576px) {
+            .responsive-bg-sm {
+                background-color: var(--bs-success);
+            }
+        }
+
+        @media (min-width: 768px) {
+
+            .responsive-bg-md {
+                background-color: var(--bs-warning);
+            }
+        }
+
+        @media (min-width: 992px) {
+
+            .responsive-bg-lg {
+                background-color: var(--bs-danger);
+            }
+        }
+
+        .clickable-column:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="bg-light p-3">
+        <h1 class="text-danger">Azure Cove Travel Blog</h1>
+    </header>
+
+    <div class="container my-4">
+        <div class="row">
+            <div class="col responsive-bg responsive-bg-sm p-2">Azure Cove</div>
+            <div class="col responsive-bg responsive-bg-md p-2">A tropical paradise with pristine beaches and rich
+                history</div>
+            <div class="col responsive-bg responsive-bg-lg p-2">
+                <div class="clickable-column" data-bs-toggle="modal" data-bs-target="#infoModal">
+                    Top Attractions
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col responsive-bg responsive-bg-sm p-2">Local Cuisine</div>
+            <div class="col responsive-bg responsive-bg-md p-2">Adventure Activities</div>
+            <div class="col responsive-bg responsive-bg-lg p-2">
+                <div class="clickable-column" data-bs-toggle="modal" data-bs-target="#infoModal">
+                    Travel Tips
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-6 bg-info p-4 m-2">Traveler's Stories</div>
+            <div class="col-md-5 bg-secondary p-4 m-2">Photo Gallery</div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="infoModalLabel">Discover More About Azure Cove</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    contact us.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
