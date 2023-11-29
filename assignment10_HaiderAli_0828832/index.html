@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haider Store</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <h1 class="text-center">Haider's Store</h1>
+            </div>
+        </div>
+
+        <div class="row mt-3 d-block d-sm-none">
+            <div class="col">
+                <form>
+                    <div class="form-group">
+                        <label for="productName">Product Name</label>
+                        <select class="form-control" id="productName">
+                            <option>Mobile</option>
+                            <option>Laptop</option>
+                            <option>Desktop</option>
+                        </select>
+                    </div>
+                    <div class="form-group d-flex justify-content-between">
+                        <label class="form-check-label" for="orderSwitch">Would you like to order</label>
+                        <input class="form-check-input" type="checkbox" id="orderSwitch">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="quantityRange">Quantity</label>
+                        <input type="range" class="form-range" id="quantityRange">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col">
+                <img src="2.jpg" class="img-fluid" alt="Computer">
+                <h6>An old style Desktop Computer</h6>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mobile</td>
+                            <td>$100</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Laptop</td>
+                            <td>$200</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Desktop</td>
+                            <td>$150</td>
+                            <td>8</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row mt-3 d-none d-sm-block">
+            <div class="col">
+                <form>
+                    <div class="form-group">
+                        <label for="productName">Product Name</label>
+                        <select class="form-control" id="productName">
+                            <option>Mobile</option>
+                            <option>Laptop</option>
+                            <option>Desktop</option>
+                        </select>
+                    </div>
+                    <div class="form-group d-flex justify-content-between">
+                        <label class="form-check-label" for="orderSwitch">Would you like to order</label>
+                        <input class="form-check-input" type="checkbox" id="orderSwitch">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="quantityRange">Quantity</label>
+                        <input type="range" class="form-range" id="quantityRange">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
