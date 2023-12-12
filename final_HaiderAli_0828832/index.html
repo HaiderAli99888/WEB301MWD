@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking App</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 56px;
+        }
+
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 2rem 0;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar-example">
+        <div class="container">
+            <a class="navbar-brand" href="#">Bank</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCategories" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categories
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownCategories">
+                            <a class="dropdown-item" href="#">Savings</a>
+                            <a class="dropdown-item" href="#">Checking</a>
+                            <a class="dropdown-item" href="#">Business</a>
+
+                        </div>
+                    </li>
+                  
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container text-center">
+            <h1 class="font-weight-light text-white">Haider Ali's Private Bank</h1>
+        </div>
+    </header>
+
+
+    <section id="products" class="py-5">
+        <div class="container">
+            <h2>Type of Accounts</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="1.jpeg" class="card-img-top" alt="Savings Account">
+                        <div class="card-body">
+                            <h5 class="card-title">Savings Account</h5>
+                            <p class="card-text">A savings account is an interest-bearing deposit account held at a bank or other financial institution.</p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="2.jpeg" class="card-img-top" alt="Checking Account">
+                        <div class="card-body">
+                            <h5 class="card-title">Checking Account</h5>
+                            <p class="card-text">A checking account is a deposit account that allows you to easily make withdrawals, deposits, and fund transfers.
+                            </p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="3.webp" class="card-img-top" alt="Business Account">
+                        <div class="card-body">
+                            <h5 class="card-title">Business Account</h5>
+                            <p class="card-text">A business account is essentially a bank account that is specifically designed to meet the financial needs of a business.
+                            </p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
